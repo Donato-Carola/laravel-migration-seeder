@@ -19,6 +19,4 @@ Route::get('/', function () {
 });
 
 
-Route::get('/blog', function () {
-    return view('pages.secondpage');
-});
+

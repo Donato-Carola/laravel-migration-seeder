@@ -6,7 +6,7 @@
 
 <h1>
 
-    home
+   train
 </h1>
 
 
@@ -14,9 +14,4 @@
 
 @endsection
 
-@section('script-content')
 
-<script>
-    console.log('ciao, prova lo script in una pagina')
-</script>
-@endsection
