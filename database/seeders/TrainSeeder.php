@@ -22,7 +22,9 @@ class TrainSeeder extends Seeder
             $actualTrains->azienda = $faker->company();
             $actualTrains->stazione_partenza = $faker->city();
             $actualTrains->stazione_arrivo = $faker->city();
+            $actualTrains->data_partenza = $faker->date();
             $actualTrains->orario_partenza = $faker->time();
+
             $actualTrains->orario_arrivo = $faker->time();
             $actualTrains->codice_treno = $faker->unique()->ean8();
             $actualTrains->numero_carrozze = $faker->numberBetween(1,10);

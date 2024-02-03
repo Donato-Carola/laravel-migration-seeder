@@ -16,6 +16,9 @@
             <li>
                 {{$trains->azienda}}
             </li>
+            <li>
+                {{$trains->data_partenza}}
+            </li>
             @empty
                 <li>
                     There are no trains available...
