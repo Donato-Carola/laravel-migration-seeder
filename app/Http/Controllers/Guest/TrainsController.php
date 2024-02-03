@@ -13,12 +13,14 @@ class TrainsController extends Controller
 
     public function index(){
 
-        $currentDate = Carbon::parse('2015-12-12');  //con la data odierna non trova le partenze dei treni, ma ho dovuto inserire una dapa specifica per vdere se funziona
+        /*$currentDate = Carbon::parse('2015-12-12');  //con la data odierna non trova le partenze dei treni, ma ho dovuto inserire una dapa specifica per vdere se funziona
 
-        /*$currentDate = Carbon::now();*/
+        $currentDate = Carbon::now();
 
         $trainList = Train::where('data_partenza', '>=', $currentDate)
-                           ->get();
+                           ->get();*/
+
+                           $trainList = Train::all();
         return view('guest.train.index',compact('trainList'));
     }
 }
